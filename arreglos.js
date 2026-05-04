@@ -99,3 +99,30 @@ function eliminarDerecho(indice){
    pintarArregloDerecha();
 }
 
+function moverHaciaDerecha(indice){
+
+   let edad = edadesIzquierda[indice];
+
+   edadesDerecha.push(edad);
+
+   edadesIzquierda.splice(indice,1);
+
+   pintarArregloIzquierdo();
+
+   pintarArregloDerecha();
+
+}
+
+function moverHaciaIzquierda(indice){
+
+   let edad = edadesDerecha[indice];
+
+   edadesIzquierda.push(edad);
+
+   edadesDerecha.splice(indice,1);
+
+   pintarArregloIzquierdo();
+
+   pintarArregloDerecha();
+
+}
