@@ -57,3 +57,39 @@ function eliminarIzquierdo(indice) {
     //eliminarIzquierdo(indice);
 
 }
+
+function pintarArregloDerecha(){
+
+   let tabla = document.getElementById("tablaDerecha");
+
+   let contenido = "";
+
+   for(let i=0; i<edadesDerecha.length; i++){
+
+      contenido += `
+      <tr>
+
+         <td>
+            <button onclick="moverHaciaIzquierda(${i})"
+                class="btn-mover">
+                ⬅
+            </button>
+         </td>
+
+         <td>
+            ${edadesDerecha[i]}
+         </td>
+
+            <td>
+                <button onclick="eliminarDerecho(${i})"
+                    class="btn-eliminar">
+                    Eliminar
+                </button>
+            </td>
+      </tr>
+      `;
+   }
+
+   tabla.innerHTML = contenido;
+
+}
