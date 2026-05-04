@@ -91,5 +91,11 @@ function pintarArregloDerecha(){
    }
 
    tabla.innerHTML = contenido;
-
 }
+
+function eliminarDerecho(indice){
+
+   edadesDerecha.splice(indice,1);
+   pintarArregloDerecha();
+}
+
