@@ -48,3 +48,12 @@ function pintarArregloIzquierdo() {
     }
     tabla.innerHTML = contenido;
 }
+
+function eliminarIzquierdo(indice) {
+
+    edadesIzquierda.splice(indice, 1);
+
+    pintarArregloIzquierdo();
+    //eliminarIzquierdo(indice);
+
+}
